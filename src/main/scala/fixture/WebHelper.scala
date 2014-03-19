@@ -23,9 +23,18 @@ implicit val webDriver:WebDriver = new ChromeDriver()
   def titlePage:String ={
     pageTitle
   }
+  def setQueryString (strQuery:String)={
+    clickOn("q")
+    textField("q").value =strQuery
+    submit()
+    Thread.sleep(5000)
+  }
   def tearDown:Unit={
     quit()
   }
 
+  def waitSeconds(sec:Long)={
+    Thread.sleep(sec)
+  }
 
 }

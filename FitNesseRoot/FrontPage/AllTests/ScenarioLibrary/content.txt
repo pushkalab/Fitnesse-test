@@ -14,3 +14,8 @@
 |start | web helper |
 |open | !-http://www.google.com-!|
 |check | title page | Google |
+
+|scenario | Google Search _|searchstring|
+|set query string |@searchstring |
+|wait seconds; |5000 |
+|check |title page |@searchstring - Google Search |
