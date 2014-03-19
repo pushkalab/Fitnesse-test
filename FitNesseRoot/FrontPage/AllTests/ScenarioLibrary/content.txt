@@ -1,0 +1,11 @@
+|scenario   |Calculate Valet Parking Cost for half an hour  |
+|start |Valet Parking |
+|When I park my car in the Valet Parking lot for 30 minutes|
+|Then I will have to pay $12.00                             |
+
+|scenario           |When I park my car in the Valet Parking lot for _ minutes|min|
+|set parking minutes|@min                                                         |
+
+|scenario|Then I will have to pay _|money |
+|check   |get payment amount       |@money|
+!contents -R2 -g -p -f -h
