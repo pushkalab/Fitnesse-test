@@ -1,3 +1,4 @@
 |import |
 |example |
+|fixture |
 !contents -R2 -g -p -f -h
