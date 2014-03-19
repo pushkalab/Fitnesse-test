@@ -1,0 +1,7 @@
+|script|
+|Calculate Valet Parking Cost for half an hour|
+
+|Valet Parking|
+|parking minutes|get Payment Amount ?|
+|30|$12.00 |
+|60|$24.00 |

@@ -48,6 +48,13 @@
                     </plugin>
                 </plugins>
             </build>
+            <dependencies>
+                <dependency>
+                    <groupId>org.fitnesse.plugins</groupId>
+                    <artifactId>maven-classpath-plugin</artifactId>
+                    <version>1.6</version>
+                </dependency>
+            </dependencies>
         </profile>
     </profiles>
 

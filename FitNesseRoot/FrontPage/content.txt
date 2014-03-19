@@ -1,9 +1,7 @@
-!1 Example Test Cases
+!***> Setup Variables 
 
-!2 Valet Parking feature
+!define TEST_SYSTEM {slim}
+!pomFile pom.xml
 
-The parking lot calculator calculates costs for Valet Parking.
-
-   Scenario: Calculate Valet Parking Cost for half an hour
-    When I park my car in the Valet Parking Lot for 30 minutes
-     Then I will have to pay $ 12.00
+***!
+!contents -R2 -g -p -f -h
