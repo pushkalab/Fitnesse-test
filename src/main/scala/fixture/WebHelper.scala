@@ -23,4 +23,9 @@ implicit val webDriver:WebDriver = new ChromeDriver()
   def titlePage:String ={
     pageTitle
   }
+  def tearDown:Unit={
+    quit()
+  }
+
+  def
 }

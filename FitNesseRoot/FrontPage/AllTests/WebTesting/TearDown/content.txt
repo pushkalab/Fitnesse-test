@@ -1,0 +1,7 @@
+|scenario |close all chrome browsers|
+|tear down |
+
+|script |
+|close all chrome browsers|
+
+!contents -R2 -g -p -f -h

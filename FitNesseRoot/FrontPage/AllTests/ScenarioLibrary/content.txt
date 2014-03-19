@@ -9,3 +9,8 @@
 |scenario|Then I will have to pay _|money |
 |check   |get payment amount       |@money|
 !contents -R2 -g -p -f -h
+
+|scenario |Google Test|
+|start | web helper |
+|open | !-http://www.google.com-!|
+|check | title page | Google |

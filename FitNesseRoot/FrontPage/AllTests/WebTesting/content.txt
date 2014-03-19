@@ -1,9 +1,5 @@
 !3 Using Selenium  Driver via Scala Test Fixture
 
-|scenario |Google Test|
-|start | web helper |
-|open | !-http://www.google.com-!|
-|check | title page | Google |
 
 |script |
 |Google Test|
