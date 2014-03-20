@@ -13,10 +13,17 @@ class WebHelper extends WebBrowser {
 
   System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver")
 
+val captureDirectory = "FitNesseRoot/files/images"
 
 implicit val webDriver:WebDriver = new ChromeDriver()
 
   val host ="http://www.google.com"
+
+  setCaptureDir(captureDirectory)
+
+  def snapshot={
+    capture to("MySnapshot.png")
+  }
   def open (url : String){
     go to (url)
   }
@@ -36,5 +43,6 @@ implicit val webDriver:WebDriver = new ChromeDriver()
   def waitSeconds(sec:Long)={
     Thread.sleep(sec)
   }
+
 
 }

@@ -18,4 +18,6 @@
 |scenario | Google Search _|searchstring|
 |set query string |@searchstring |
 |wait seconds; |5000 |
+|snapshot |
 |check |title page |@searchstring - Google Search |
+
